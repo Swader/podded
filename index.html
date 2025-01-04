@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Podded - Nespresso Pod Impact Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main class="container">
+        <h1>Podded 🌍</h1>
+        <p class="subtitle">Calculate your coffee pod environmental impact</p>
+        
+        <div class="calculator">
+            <div class="slider-container">
+                <label for="pods-per-day">Nespresso pods per day: <span id="pods-value">1</span></label>
+                <input type="range" id="pods-per-day" min="1" max="100" value="1">
+            </div>
+            
+            <div class="info-box">
+                <p>📊 Did you know? An empty Nespresso pod weighs around 3g and is almost entirely made of unrecyclable plastic that takes centuries to decompose.</p>
+            </div>
+
+            <div class="results" id="results">
+                <!-- Results will be populated by JavaScript -->
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html> 
