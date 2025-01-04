@@ -95,6 +95,30 @@ input[type="range"]::-webkit-slider-thumb:hover {
     line-height: 1.8;
 }
 
+footer {
+    text-align: center;
+    padding: 2rem 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer p + p {
+    margin-top: 1rem;
+    font-size: 0.9em;
+}
+
+footer a {
+    color: var(--accent-color);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+footer a:hover {
+    color: #219a52;
+}
+
 @media (max-width: 600px) {
     .container {
         margin: 1rem auto;

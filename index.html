@@ -3,29 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Podded - Nespresso Pod Impact Calculator</title>
+    <title>Podded - Calculate Your Coffee Pod Environmental Impact | Plastic Waste Calculator</title>
+    <meta name="description" content="Calculate the environmental impact of your Nespresso pods. See how much plastic waste your daily coffee habit creates, visualized in fun and meaningful comparisons.">
+    <meta name="keywords" content="coffee pod calculator, Nespresso environmental impact, plastic waste calculator, coffee sustainability, pod recycling, environmental awareness">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://swader.github.io/podded/">
+    <meta property="og:title" content="Calculate Your Coffee Pod Environmental Impact">
+    <meta property="og:description" content="Discover how much plastic waste your daily coffee pods create, visualized through everyday object comparisons.">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://swader.github.io/podded/">
+    <meta property="twitter:title" content="Coffee Pod Environmental Impact Calculator">
+    <meta property="twitter:description" content="Visualize your coffee pod plastic waste impact through everyday object comparisons.">
+
     <link rel="stylesheet" href="styles.css">
+    <link rel="canonical" href="https://swader.github.io/podded/">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Podded - Coffee Pod Environmental Impact Calculator",
+        "description": "Calculate and visualize the environmental impact of your daily coffee pod usage through comparisons with everyday objects.",
+        "url": "https://swader.github.io/podded/",
+        "applicationCategory": "EnvironmentalApplication",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        },
+        "featureList": [
+            "Calculate daily coffee pod waste",
+            "Visualize plastic waste through comparisons",
+            "Track yearly environmental impact",
+            "Volume and weight calculations"
+        ]
+    }
+    </script>
 </head>
 <body>
-    <main class="container">
+    <header>
         <h1>Podded 🌍</h1>
         <p class="subtitle">Calculate your coffee pod environmental impact</p>
-        
-        <div class="calculator">
-            <div class="slider-container">
-                <label for="pods-per-day">Nespresso pods per day: <span id="pods-value">1</span></label>
-                <input type="range" id="pods-per-day" min="1" max="100" value="1">
-            </div>
-            
-            <div class="info-box">
-                <p>📊 Did you know? An empty Nespresso pod weighs around 3g and is almost entirely made of unrecyclable plastic that takes centuries to decompose.</p>
-            </div>
+    </header>
 
-            <div class="results" id="results">
+    <main class="container">
+        <article class="calculator">
+            <section class="slider-container">
+                <label for="pods-per-day">Nespresso pods per day: <span id="pods-value">1</span></label>
+                <input type="range" id="pods-per-day" min="1" max="100" value="1" aria-label="Number of coffee pods used per day">
+            </section>
+            
+            <section class="info-box">
+                <p>📊 Did you know? An empty Nespresso pod weighs around 3g and is almost entirely made of unrecyclable plastic that takes centuries to decompose.</p>
+            </section>
+
+            <section class="results" id="results" aria-live="polite">
                 <!-- Results will be populated by JavaScript -->
-            </div>
-        </div>
+            </section>
+        </article>
     </main>
-    <script src="script.js"></script>
+
+    <footer>
+        <p>Help reduce plastic waste by considering reusable alternatives to single-use coffee pods.</p>
+        <p>Built by <a href="https://x.com/bitfalls" target="_blank" rel="noopener noreferrer">@bitfalls</a></p>
+    </footer>
+
+    <script src="script.js" defer></script>
 </body>
 </html> 
